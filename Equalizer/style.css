@@ -1,0 +1,23 @@
+.equalizer {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 200px;
+	background: yellow;
+}
+
+.bar {
+	width: 5px;
+	background-color: #3498db;
+	margin: 0 5px;
+	transition: height 1s;
+	position: relative;
+}
+.bar::before {
+	content: "";
+	width: 5px;
+	height: 5px;
+	background: red;
+	position: absolute;
+	top: -30%;
+}
